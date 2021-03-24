@@ -7,36 +7,36 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/index.js":
+/***/ "./src/index.ts":
 /*!**********************!*\
-  !*** ./src/index.js ***!
+  !*** ./src/index.ts ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _square__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./square */ \"./src/square.js\");\n/* harmony import */ var _sum__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sum */ \"./src/sum.js\");\n\r\n\r\ndocument.writeln('the sum of 5 and 6 is: ', (0,_sum__WEBPACK_IMPORTED_MODULE_1__.default)(5, 6).toString(), '<br/>');\r\ndocument.writeln('the sum of 7 and 2 is: ', (0,_sum__WEBPACK_IMPORTED_MODULE_1__.default)(7, 2).toString(), '<br/>');\r\ndocument.writeln('the square of 5 and 6 is: ', (0,_square__WEBPACK_IMPORTED_MODULE_0__.default)(5, 6).toString(), '<br/>');\r\ndocument.writeln('the square of 7 and 4 is: ', (0,_square__WEBPACK_IMPORTED_MODULE_0__.default)(7, 4).toString(), '<br/>');\n\n//# sourceURL=webpack://assignment-2/./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _square__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./square */ \"./src/square.ts\");\n/* harmony import */ var _square__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_square__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _sum__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sum */ \"./src/sum.ts\");\n/* harmony import */ var _sum__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sum__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\r\ndocument.writeln('the sum of 5 and 6 is: ', _sum__WEBPACK_IMPORTED_MODULE_1___default()(5, 6).toString(), '<br/>');\r\ndocument.writeln('the sum of 7 and 2 is: ', _sum__WEBPACK_IMPORTED_MODULE_1___default()(7, 2).toString(), '<br/>');\r\ndocument.writeln('the square of 5 and 6 is: ', _square__WEBPACK_IMPORTED_MODULE_0___default()(5, 6).toString(), '<br/>');\r\ndocument.writeln('the square of 7 and 4 is: ', _square__WEBPACK_IMPORTED_MODULE_0___default()(7, 4).toString(), '<br/>');\r\n\n\n//# sourceURL=webpack://assignment-2/./src/index.ts?");
 
 /***/ }),
 
-/***/ "./src/square.js":
+/***/ "./src/square.ts":
 /*!***********************!*\
-  !*** ./src/square.js ***!
+  !*** ./src/square.ts ***!
   \***********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((a, b) => a * b);\n\n//# sourceURL=webpack://assignment-2/./src/square.js?");
+eval("throw new Error(\"Module parse failed: Unexpected token (1:17)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n> export default (a: number, b: number) => a * b;\");\n\n//# sourceURL=webpack://assignment-2/./src/square.ts?");
 
 /***/ }),
 
-/***/ "./src/sum.js":
+/***/ "./src/sum.ts":
 /*!********************!*\
-  !*** ./src/sum.js ***!
+  !*** ./src/sum.ts ***!
   \********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((a,b) => a+b);\n\n//# sourceURL=webpack://assignment-2/./src/sum.js?");
+eval("throw new Error(\"Module parse failed: Unexpected token (1:17)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n> export default (a: number, b: number) => a + b;\");\n\n//# sourceURL=webpack://assignment-2/./src/sum.ts?");
 
 /***/ })
 
@@ -66,6 +66,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -99,7 +111,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.ts");
 /******/ 	
 /******/ })()
 ;

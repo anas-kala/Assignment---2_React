@@ -5,15 +5,21 @@
   "main": "script.js",
   "scripts": {
     "test": "test",
-    "build": "webpack --mode production"
+    "check-types": "tsc",
+    "lint": "eslint . --ext .ts",
+    "build": "webpack --watch --mode production"
   },
   "author": "Anas Al Kala",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.13.10",
     "@babel/core": "^7.13.10",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.13.8",
     "@babel/preset-env": "^7.13.10",
+    "@babel/preset-typescript": "^7.13.0",
     "eslint": "^7.21.0",
+    "ts-loader": "^8.0.18",
     "typescript": "^4.2.3",
     "webpack": "^5.24.4",
     "webpack-cli": "^4.5.0"
