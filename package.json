@@ -7,7 +7,9 @@
     "test": "test",
     "check-types": "tsc",
     "lint": "eslint . --ext .ts",
-    "build": "webpack --watch --mode production"
+    "build": "webpack --mode production",
+    "watch": "webpack --watch",
+    "typecheck": "tsc"
   },
   "author": "Anas Al Kala",
   "license": "ISC",
